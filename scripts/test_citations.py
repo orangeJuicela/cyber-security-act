@@ -169,14 +169,14 @@ def main() -> int:
     if stats["unresolvedByKind"].get("external") != 7:
         fail(f"external count drifted: {stats['unresolvedByKind']}")
 
-    # UI constraints: no right-aligned table text, no analytics, placeholder explanation only.
+    # UI constraints: no right-aligned table text, no analytics.
     css = (ROOT / "site" / "css" / "style.css").read_text(encoding="utf-8")
     if "text-align: right" in css or "text-align:right" in css:
         fail("stylesheet right-aligns text")
-    law_js = (ROOT / "site" / "js" / "law.js").read_text(encoding="utf-8")
-    if "白話解說撰寫中" not in law_js:
-        fail("plain-language placeholder missing")
     blob = "\n".join(path.read_text(encoding="utf-8") for path in (ROOT / "site").rglob("*") if path.suffix in {".html", ".js", ".css"})
+    for hidden in ("白話解說", "互動學習", "互動練習"):
+        if hidden in blob:
+            fail(f"removed feature still mentioned: {hidden}")
     for banned in ("gtag", "google-analytics", "googletagmanager", "plausible"):
         if banned in blob:
             fail(f"tracking snippet found: {banned}")
