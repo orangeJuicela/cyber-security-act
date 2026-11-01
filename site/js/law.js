@@ -333,13 +333,6 @@ function renderArticle(data, law, article, state) {
     main.append(box);
   }
 
-  const plain = el("section", "plain");
-  const header = document.createElement("header");
-  header.append(el("h2", null, "白話解說"));
-  header.append(el("span", null, "本站整理，僅供學習參考"));
-  plain.append(header, el("p", "plain-status", "白話解說撰寫中"));
-  main.append(plain);
-
   const index = law.articles.findIndex((item) => item.id === article.id);
   const pager = el("nav", "pager");
   pager.setAttribute("aria-label", "上一條與下一條");
