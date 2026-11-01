@@ -1,0 +1,571 @@
+{
+  "resolved": 109,
+  "unresolved": 172,
+  "unresolvedByKind": {
+    "external": 7,
+    "paragraph": 64,
+    "relative": 101
+  },
+  "samples": [
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "3",
+      "kind": "external",
+      "text": "第二條第二項、第三項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "3",
+      "kind": "external",
+      "text": "第六十三條第一項、第四項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "3",
+      "kind": "external",
+      "text": "第二條第八項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "3",
+      "kind": "external",
+      "text": "第七十七條第一項第二款第三目"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "3",
+      "kind": "paragraph",
+      "text": "第四目"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "4",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "5",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "5",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "6",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "7",
+      "kind": "relative",
+      "text": "前二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "8",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "8",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "8",
+      "kind": "relative",
+      "text": "前三項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "8",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "9",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "10",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "10",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "11",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "11",
+      "kind": "relative",
+      "text": "前二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "16",
+      "kind": "relative",
+      "text": "前三條"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "16",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "17",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "17",
+      "kind": "relative",
+      "text": "前三項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "17",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "18",
+      "kind": "relative",
+      "text": "前二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "19",
+      "kind": "relative",
+      "text": "前二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "19",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "19",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "19",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "21",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "21",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "22",
+      "kind": "relative",
+      "text": "前二條"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "24",
+      "kind": "relative",
+      "text": "前三項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "25",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "25",
+      "kind": "relative",
+      "text": "該項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "25",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "25",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "25",
+      "kind": "paragraph",
+      "text": "第三款"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "27",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "28",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030297",
+      "law": "資通安全管理法",
+      "article": "32",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "3",
+      "kind": "external",
+      "text": "第三條第一項第一款及第二項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "6",
+      "kind": "relative",
+      "text": "前款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "6",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "7",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "7",
+      "kind": "paragraph",
+      "text": "第三款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "7",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "7",
+      "kind": "paragraph",
+      "text": "第三款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "9",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "9",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "9",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "relative",
+      "text": "前條"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "paragraph",
+      "text": "第一款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "relative",
+      "text": "前條"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "10",
+      "kind": "paragraph",
+      "text": "第六款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "12",
+      "kind": "relative",
+      "text": "前款"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "14",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "14",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030303",
+      "law": "資通安全管理法施行細則",
+      "article": "14",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "3",
+      "kind": "relative",
+      "text": "前三項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "3",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "3",
+      "kind": "paragraph",
+      "text": "第三項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "6",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "9",
+      "kind": "relative",
+      "text": "前條"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "10",
+      "kind": "relative",
+      "text": "前六條"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "relative",
+      "text": "同條"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第三項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第一項"
+    },
+    {
+      "pcode": "A0030304",
+      "law": "資通安全責任等級分級辦法",
+      "article": "11",
+      "kind": "paragraph",
+      "text": "第二項"
+    },
+    {
+      "pcode": "A0030305",
+      "law": "資通安全事件通報應變及演練辦法",
+      "article": "4",
+      "kind": "relative",
+      "text": "前四款"
+    },
+    {
+      "pcode": "A0030305",
+      "law": "資通安全事件通報應變及演練辦法",
+      "article": "6",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030305",
+      "law": "資通安全事件通報應變及演練辦法",
+      "article": "6",
+      "kind": "relative",
+      "text": "前項"
+    },
+    {
+      "pcode": "A0030305",
+      "law": "資通安全事件通報應變及演練辦法",
+      "article": "6",
+      "kind": "paragraph",
+      "text": "第一項"
+    }
+  ]
+}
