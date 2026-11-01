@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="關於資安法白話通：非官方學習資源，條文來自全國法規資料庫。">
+  <title>關於｜資安法白話通</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sticky-top">
+    <div class="topbar"><div class="topbar-inner">本網站為資通安全管理法學習資源（非官方）</div></div>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2.2 4.5 5.4v6.1c0 4.5 3.1 7.9 7.5 9.1 4.4-1.2 7.5-4.6 7.5-9.1V5.4L12 2.2z"/><path fill="#fff" d="M10.9 12.1 8.8 10l-1.1 1.1 3.2 3.2 5.4-5.4-1.1-1.1z"/></svg>
+          </span>
+          <span><span class="brand-name">資安法白話通</span><span class="brand-sub">資通安全管理法及子法・條文查詢</span></span>
+        </a>
+        <input class="nav-toggle" type="checkbox" id="nav-toggle">
+        <label class="nav-burger" for="nav-toggle"><span></span><span></span><span></span></label>
+        <nav class="nav" aria-label="主要">
+          <a class="nav-link" href="index.html">首頁</a>
+          <a class="nav-link" href="overview.html">法規總覽</a>
+          <a class="nav-link" href="law.html">條文查詢</a>
+          <span class="nav-link is-disabled">互動學習<span class="soon">即將推出</span></span>
+          <a class="nav-link is-active" href="about.html" aria-current="page">關於</a>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <main class="wrap about">
+    <h1 class="page-title">關於本站</h1>
+    <p>資安法白話通是資通安全管理法的非官方學習資源，方便對照母法與 8 部子法的條文與引用。本站不是主管機關，也不提供法律意見。</p>
+    <h2>條文從哪裡來</h2>
+    <p>全文以全國法規資料庫（法務部）開放資料為準，由 <code>scripts/fetch_laws.py</code> 下載並轉成網站用的 JSON。每部法規都標示來源網址與最新修正或發布日期。開放資料最近一次更新時間：<span id="source-updated">—</span>。</p>
+    <p>母法頁面範例：<a href="https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030297">LawAll.aspx?pcode=A0030297</a>。若條文與全國法規資料庫不一致，以該資料庫為準。</p>
+    <h2>引用怎麼連</h2>
+    <p>條文裡寫明的「第○條」「本法第○條」「資通安全管理法第○條」會連到這九部法規中的對應條文。<span class="swatch-same">同法引用</span>與<span class="swatch-cross">跨法引用</span>用不同顏色。游標停在連結上，或用滑鼠點一下，可預覽該條並按「前往條文」。</p>
+    <p id="cite-stats">讀取引用統計中…</p>
+    <p>前條、前項、同條，以及這九部以外的法律（例如個人資料保護法），這版先保持純文字，不猜測它指哪一條。</p>
+    <h2>這版還沒有的東西</h2>
+    <ul>
+      <li>各部會的特定非公務機關作業辦法</li>
+      <li>白話解說正文（條文頁目前只標示「白話解說撰寫中」）</li>
+      <li>互動學習與情境題</li>
+      <li>母法與子法的關係圖、引用日期是否過期的警示</li>
+    </ul>
+    <h2>免責</h2>
+    <p>條文來源：全國法規資料庫（法務部）。本站僅供學習參考，不構成法律意見。</p>
+  </main>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>條文來源：全國法規資料庫（法務部）。本站僅供學習參考，不構成法律意見。</p>
+      <p>GitHub Pages</p>
+    </div>
+  </footer>
+  <noscript><p class="wrap">請啟用 JavaScript 以載入引用統計。免責聲明見上方正文。</p></noscript>
+  <script type="module" src="js/about.js"></script>
+</body>
+</html>
