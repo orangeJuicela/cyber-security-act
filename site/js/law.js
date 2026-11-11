@@ -141,8 +141,38 @@ function hintOf(article) {
   return flat.length > 18 ? `${flat.slice(0, 18)}…` : flat;
 }
 
+function tocButton() {
+  const button = el("button", "btn btn-ghost btn-sm toc-open", "章節");
+  button.type = "button";
+  button.setAttribute("aria-expanded", "false");
+  button.setAttribute("aria-controls", "law-chapters");
+  button.addEventListener("click", () => {
+    const chapters = document.getElementById("law-chapters");
+    if (!chapters) return;
+    const open = !chapters.classList.contains("is-open");
+    chapters.classList.toggle("is-open", open);
+    for (const node of document.querySelectorAll(".toc-open")) {
+      node.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+    if (!open) return;
+    const current = chapters.querySelector("a.is-active");
+    if (current) {
+      const delta = current.getBoundingClientRect().top - chapters.getBoundingClientRect().top;
+      chapters.scrollTop += delta - 36;
+    }
+    const top = chapters.getBoundingClientRect().top + window.scrollY - 120;
+    const root = document.documentElement;
+    const previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    window.scrollTo(0, Math.max(0, top));
+    root.style.scrollBehavior = previous;
+  });
+  return button;
+}
+
 function renderChapters(law, articleId, termsQuery) {
   const aside = el("aside", "panel chapters");
+  aside.id = "law-chapters";
   aside.append(el("h2", null, "章節"));
   for (const chapter of law.chapters) {
     const block = el("div", "chapter-block");
@@ -343,11 +373,12 @@ function renderArticle(data, law, article, state) {
     link.href = keepQuery(articleHref(law.pcode, prev.id), state);
     pager.append(link);
   } else pager.append(el("span"));
+  pager.append(tocButton());
   if (next) {
     const link = el("a", null, `${next.no} 〉`);
     link.href = keepQuery(articleHref(law.pcode, next.id), state);
     pager.append(link);
-  }
+  } else pager.append(el("span"));
   main.append(pager);
 
   const history = el("details", "history");
@@ -372,6 +403,7 @@ function keepQuery(href, state) {
 function renderResults(data, state, hits) {
   const main = el("section", "panel article");
   main.append(el("h1", null, "搜尋結果"));
+  main.append(tocButton());
   const scopeName = state.scope === "parent" ? "只搜母法" : state.scope === "sub" ? "只搜子法" : "全部法規";
   main.append(el("p", null, `「${state.q}」・${scopeName}・${hits.length} 筆`));
   if (!hits.length) {
