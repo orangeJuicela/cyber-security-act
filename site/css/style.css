@@ -462,6 +462,7 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
   border-top: 1px solid var(--line);
 }
 .pager a { text-decoration: none; font-weight: 700; }
+.toc-open { display: none; }
 
 .ref-block { margin: 0 6px 14px; }
 .ref-block h3 { margin: 0 0 8px; font-size: 15.5px; }
@@ -568,7 +569,9 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
 .loading, .error { padding: 24px 0; color: var(--muted); }
 
 @media (max-width: 1020px) {
-  .law-layout, .card-grid { grid-template-columns: 1fr; }
+  .law-layout { grid-template-columns: minmax(0, 1fr); }
+  .card-grid { grid-template-columns: 1fr; }
+  .law-layout > * { min-width: 0; }
   .law-layout .article { order: 1; }
   .law-layout .chapters { order: 2; max-height: 320px; overflow: auto; }
   .law-layout .refs { order: 3; }
@@ -601,8 +604,47 @@ mark { background: var(--mark); color: inherit; border-radius: 2px; padding: 0 1
   .feature-card { flex-direction: column; align-items: flex-start; }
   .feature-card .btn { margin-left: 0; }
   .footer-inner { flex-direction: column; }
-  .article { padding: 16px; }
-  .article h1 { font-size: 24px; }
+  .article {
+    padding: 18px 16px 12px;
+    overflow-wrap: anywhere;
+  }
+  .article h1 {
+    font-size: 24px;
+    overflow-wrap: anywhere;
+  }
+  .article .origin-block {
+    font-size: 18px;
+    line-height: 1.8;
+  }
+  .article .para { margin: 1.15em 0; }
+  .article .para-label { line-height: 1.45; }
+  .article .kuan-list > li { margin: 0.45em 0; }
+  .article .cite { white-space: normal; }
+  .article .history pre,
+  .article .attach-list a { overflow-wrap: anywhere; }
+  .tool-row select {
+    flex: 1 1 100%;
+    width: 100%;
+    min-width: 0;
+  }
+  .tool-row input[type="search"] {
+    min-width: 0;
+    flex: 1 1 12em;
+  }
+  .law-tabs { min-width: 0; max-width: 100%; }
+  .toc-open { display: inline-flex; }
+  .pager { flex-wrap: wrap; align-items: center; }
+  .law-layout .chapters {
+    display: none;
+    max-height: none;
+    overflow: visible;
+  }
+  .law-layout .chapters.is-open {
+    display: block;
+    max-height: 70vh;
+    overflow: auto;
+    scroll-margin-top: 120px;
+  }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
